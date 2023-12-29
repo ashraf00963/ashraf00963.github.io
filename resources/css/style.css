@@ -248,8 +248,8 @@ header .tablet {
     height: auto;
     background-color: transparent;
     border: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 
   #sign-up-cta .content {
@@ -277,6 +277,15 @@ header .tablet {
   #sign-up-cta {
     margin: 0;
     padding: 0;
+    width: 375px;
+  }
+
+  #sign-up-cta .content {
+    width: 375px;
+  }
+
+  #sign-up-cta .header {
+    width: 375px;
   }
 
   #sign-up-cta h1 {
