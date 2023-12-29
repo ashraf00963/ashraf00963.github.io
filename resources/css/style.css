@@ -110,6 +110,10 @@ header .mobile {
   display: none;
 }
 
+header .tablet {
+  display: none;
+}
+
 @media only screen and (max-width: 760px) {
   header .desktop {
     display: none;
@@ -139,6 +143,26 @@ header .mobile {
     padding: .1875rem .5rem;
     background-color: #9dc20b;
     line-height: 1.6;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  nav li {
+    padding-left: 2rem;
+  }
+  header .tablet {
+    display: block;
+  }
+
+  header .tablet .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+  
+  header .tablet a {
     color: white;
   }
 }
@@ -242,6 +266,28 @@ header .mobile {
   #sign-up-cta h2 {
     font-size: 2rem;
   }
+}
+
+@media only screen and (max-width: 1024px) {
+  #sign-up-section {
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+  }
+
+  .banner {
+    padding: 0;
+    background-size: cover;
+  }
+
+  .banner .desktop {
+    display: none;
+  }
+
+  #sign-up-cta {
+    background-color: rgba(100, 100, 100, 0);
+    border: none;
+  } 
 }
 
 /* Features Section */
@@ -404,26 +450,44 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  #quotes-section {
+    padding: 4rem 0;
+    overflow: hidden;
+  }
+
+  #quotes-section .content {
+    display: flex;
+    align-items: self-start;
+  }
+  
+  #quotes-section .quote-citation {
+    /* Add any styles you need for the citation */
+    margin-right: 1rem;
+  }
+}
+
 
 /* Footer */
 
